@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height:90vh
+        }
+        .quize-box{
+            width:360px;
+            border:1px solid black;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;            
+            background: skyblue;
+        }
+        #btn{
+            margin-top:15px;
+            width:200px;
+            border-radius:20px;
+            border: none;
+            background: violet;
+            color: blue;
+            font-weight:bold;
+            text-transform: uppercase;
+            font-size:16px;
+            padding: 10px;
+        }
+        .option{
+            width:280px;
+            border: 1px solid black;
+            margin-top:15px;
+            background: white;
+        }
+        ul {
+            list-style: none;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quize-box">
+         <div class="box">
+            <h2 class="question">Question Text</h2>
+        <div class="option">
+            <ul>
+                <li>
+                    <input type="radio" class="answare" id="a" name="ans">
+                    <label for="a" class="opt1">a</label>
+                </li>
+                <li>
+                    <input type="radio" class="answare" id="b" name="ans">
+                    <label for="b" class="opt2">b</label>
+                </li>
+                <li>
+                    <input type="radio" class="answare" id="c" name="ans">
+                    <label for="c" class="opt3">c</label>
+                </li>
+                <li>
+                    <input type="radio" class="answare" id="d" name="ans">
+                    <label for="d" class="opt4">d</label>
+                </li>
+            </ul>
+        </div>
+        <input type="submit" id="btn">
+    </div>
+    </div>
+      <script src="script.js"></script>
+</body>
+</html>

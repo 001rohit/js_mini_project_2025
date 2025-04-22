@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height:100vh;
+        }
+        .clock-box{
+            border: 1px solid black;
+            width:360px;
+             /* background-image: url('https://images.unsplash.com/photo-1529485726363-95c8d62f656f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVkZGhhfGVufDB8fDB8fHww') ; */
+             overflow: hidden;
+
+            }
+            .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* min-height:30vh */
+        }
+        img{
+            width:100%;
+            height:100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<br>
+ <body>
+    <div class="clock-box">
+        <img src="https://images.unsplash.com/photo-1529485726363-95c8d62f656f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVkZGhhfGVufDB8fDB8fHww" alt="">
+        <div class="box">
+            <div id="date1"></div>
+            <div id="time"></div>
+        </div>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>
